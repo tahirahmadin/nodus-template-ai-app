@@ -1,4 +1,3 @@
-import React from "react";
 import { Container } from "./container";
 import { LogoSVG } from "./logo";
 import { Heading } from "./heading";
@@ -6,16 +5,10 @@ import { SubHeading } from "./subheading";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { Button } from "./button";
-import { FacebookIcon, GoogleIcon, AppleIcon } from "@/icons/general";
-import { Link } from "react-router-dom";
 import { AuthIllustration } from "./auth-illustration";
 import { Textarea } from "./ui/textarea";
 
 export const Contact = () => {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("submitted");
-  };
   return (
     <Container className="min-h-[calc(100vh-8rem)] py-10 md:py-20">
       <div className="grid grid-cols-1 gap-10 px-4 md:grid-cols-2 md:px-8 lg:gap-40">

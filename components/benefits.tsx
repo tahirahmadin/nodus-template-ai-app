@@ -12,7 +12,6 @@ import {
   ScreenCogIcon,
   BellIcon,
 } from "@/icons/card-icons";
-import { Scale } from "./scale";
 import { AnimatePresence, motion } from "motion/react";
 import { RealtimeSyncIcon } from "@/icons/bento-icons";
 import { DivideX } from "./divide";
@@ -76,13 +75,13 @@ export const Benefits = () => {
       </div>
       <div className="mt-20 grid grid-cols-1 gap-4 md:grid-cols-3">
         <div className="grid grid-cols-1 gap-4">
-          {benefits.slice(0, 3).map((benefit, index) => (
+          {benefits.slice(0, 3).map((benefit) => (
             <Card key={benefit.title} {...benefit} />
           ))}
         </div>
         <MiddleCard />
         <div className="grid grid-cols-1 gap-4">
-          {benefits.slice(3, 6).map((benefit, index) => (
+          {benefits.slice(3, 6).map((benefit) => (
             <Card key={benefit.title} {...benefit} />
           ))}
         </div>

@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import MeshGradient from "./mesh-gradient";
 
 export const AuthIllustration = () => {

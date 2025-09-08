@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Logo } from "./logo";
 import { Container } from "./container";
 import { Link } from "react-router-dom";
@@ -82,7 +82,7 @@ const MobileNav = ({ items }: { items: { title: string; href: string }[] }) => {
             <div className="divide-divide border-divide mt-6 flex flex-col divide-y border-t">
               {items.map((item, index) => (
                 <Link
-                  href={item.href}
+                  to={item.href}
                   key={item.title}
                   className="px-4 py-2 font-medium text-gray-600 transition duration-200 hover:text-neutral-900 dark:text-gray-300 dark:hover:text-neutral-300"
                   onClick={() => setIsOpen(false)}
@@ -102,7 +102,7 @@ const MobileNav = ({ items }: { items: { title: string; href: string }[] }) => {
                 <Button
                   onClick={() => setIsOpen(false)}
                   as={Link}
-                  href="/sign-up"
+                  to="/sign-up"
                   className="w-full"
                 >
                   Start building
@@ -128,7 +128,7 @@ const DesktopNav = ({
         {items.map((item) => (
           <Link
             className="font-medium text-gray-600 transition duration-200 hover:text-neutral-900 dark:text-gray-300 dark:hover:text-neutral-300"
-            href={item.href}
+            to={item.href}
             key={item.title}
           >
             {item.title}
@@ -137,7 +137,7 @@ const DesktopNav = ({
       </div>
       <div className="flex items-center gap-2">
         <ModeToggle />
-        <Button as={Link} href="/sign-up">
+        <Button as={Link} to="/sign-up">
           Start building
         </Button>
       </div>
@@ -169,7 +169,7 @@ const FloatingNav = ({
         {items.map((item) => (
           <Link
             className="font-medium text-gray-600 transition duration-200 hover:text-neutral-900 dark:text-gray-300 dark:hover:text-neutral-300"
-            href={item.href}
+            to={item.href}
             key={item.title}
           >
             {item.title}
@@ -178,7 +178,7 @@ const FloatingNav = ({
       </div>
       <div className="flex items-center gap-2">
         <ModeToggle />
-        <Button as={Link} href="/sign-up">
+        <Button as={Link} to="/sign-up">
           Start building
         </Button>
       </div>

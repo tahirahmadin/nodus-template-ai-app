@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 export function ModeToggle() {
   // const { theme, setTheme } = useTheme();
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [theme, setTheme] = useState<"light" | "dark" | "system">("light");
   const [systemTheme, setSystemTheme] = useState<"light" | "dark">("light");
 
   useEffect(() => {

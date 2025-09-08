@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
 // import { useTheme } from "next-themes";
 
@@ -44,7 +44,6 @@ export const Dot = ({
   }, [mousePosition]);
 
   // const { theme } = useTheme();
-  const theme = "light"; // Default theme
 
   return (
     <motion.div

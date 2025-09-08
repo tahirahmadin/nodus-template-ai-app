@@ -74,7 +74,7 @@ export const HowItWorks = () => {
         {/* Desktop Tabs */}
         <div className="border-divide divide-divide mt-16 hidden w-full grid-cols-2 divide-x border-t lg:grid">
           <div className="divide-divide divide-y">
-            {tabs.map((tab, index) => (
+            {tabs.map((tab) => (
               <button
                 key={tab.title}
                 className="group relative flex w-full flex-col items-start overflow-hidden px-12 py-8 hover:bg-gray-100 dark:hover:bg-neutral-800"
@@ -120,7 +120,7 @@ export const HowItWorks = () => {
         </div>
         {/* Mobile Tabs */}
         <div className="divide-divide border-divide mt-16 flex w-full flex-col divide-y overflow-hidden border-t lg:hidden">
-          {tabs.map((tab, index) => (
+          {tabs.map((tab) => (
             <div
               key={tab.title + "mobile"}
               className="group relative flex w-full flex-col items-start overflow-hidden px-4 py-4 md:px-12 md:py-8"

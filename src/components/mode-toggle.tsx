@@ -1,11 +1,10 @@
 "use client";
 
 import { MoonIcon, SunIcon } from "@/icons/general";
-import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 
 export function ModeToggle() {
-  const { theme, setTheme } = useTheme();
+  const [theme, setTheme] = useState<"light" | "dark" | "system">("light");
   const [systemTheme, setSystemTheme] = useState<"light" | "dark">("light");
 
   useEffect(() => {

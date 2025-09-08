@@ -1,4 +1,3 @@
-import React from "react";
 import { Container } from "./container";
 import { DivideX } from "./divide";
 import { SectionHeading } from "./seciton-heading";
@@ -27,7 +26,7 @@ export const Security = () => {
           <Button
             className="mt-4 mb-8 inline-block w-full md:w-auto"
             as={Link}
-            href="/pricing"
+            to="/pricing"
           >
             Start for free
           </Button>

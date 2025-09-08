@@ -153,7 +153,7 @@ function CareersContent() {
             </div>
           </div>
           <div className="divide-divide border-divide flex flex-col items-center justify-center divide-y">
-            {careers.slice(0, 3).map((career, index) => (
+            {careers.slice(0, 3).map((career) => (
               <Link
                 to={career.href}
                 key={career.id}
@@ -253,7 +253,7 @@ function CareersContent() {
           Why Work at Nodus?
         </SectionHeading>
         <div className="mt-12 grid grid-cols-1 gap-10 px-4 md:grid-cols-2 md:px-8 lg:grid-cols-3">
-          {why.map((useCase, index) => (
+          {why.map((useCase) => (
             <div
               key={useCase.title}
               className="relative z-10 rounded-lg bg-gray-50 p-4 transition duration-200 md:p-5 dark:bg-neutral-800"

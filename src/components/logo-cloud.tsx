@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Container } from "./container";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";

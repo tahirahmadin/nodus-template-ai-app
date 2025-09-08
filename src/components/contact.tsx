@@ -1,4 +1,3 @@
-import React from "react";
 import { Container } from "./container";
 import { LogoSVG } from "./logo";
 import { Heading } from "./heading";
@@ -6,7 +5,6 @@ import { SubHeading } from "./subheading";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { Button } from "./button";
-import { Link } from "react-router-dom";
 import { AuthIllustration } from "./auth-illustration";
 import { Textarea } from "./ui/textarea";
 

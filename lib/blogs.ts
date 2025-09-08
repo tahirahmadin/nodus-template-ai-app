@@ -1,70 +1,51 @@
-import matter from "gray-matter";
-import { remark } from "remark";
-import html from "remark-html";
+// Mock blog data for Vite/React
 
-type FrontMatter = {
-  title: string;
-  description: string;
-  date: string;
-  image: string;
-  authorName?: string;
-  authorSrc?: string;
-};
+// Mock blog data
+const mockBlogs = [
+  {
+    slug: "introduction-to-nextjs",
+    title: "Introduction to Next.js",
+    description: "Learn the basics of Next.js framework",
+    date: "2024-01-15",
+    image: "/blog/nextjs.webp",
+    authorName: "John Doe",
+    authorSrc: "/avatars/john.png",
+  },
+  {
+    slug: "mastering-react-hooks",
+    title: "Mastering React Hooks",
+    description: "Deep dive into React hooks and their usage",
+    date: "2024-01-10",
+    image: "/blog/react.webp",
+    authorName: "Jane Smith",
+    authorSrc: "/avatars/jane.png",
+  },
+  {
+    slug: "typescript-best-practices",
+    title: "TypeScript Best Practices",
+    description: "Best practices for writing TypeScript code",
+    date: "2024-01-05",
+    image: "/blog/typescript.webp",
+    authorName: "Mike Johnson",
+    authorSrc: "/avatars/mike.png",
+  },
+];
 
 export const getSingleBlog = async (slug: string) => {
-  try {
-    const singleBlog = await fs.readFile(
-      path.join(process.cwd(), "/data", `${slug}.mdx`),
-      "utf-8",
-    );
+  const blog = mockBlogs.find((b) => b.slug === slug);
+  if (!blog) return null;
 
-    if (!singleBlog) {
-      return null;
-    }
-
-    const { content, frontmatter } = await compileMDX<FrontMatter>({
-      source: singleBlog,
-      options: { parseFrontmatter: true },
-    });
-
-    return { content, frontmatter };
-  } catch (error) {
-    console.error(`Error reading blog file for slug "${slug}":`, error);
-    return null;
-  }
+  return {
+    content: `<h1>${blog.title}</h1><p>${blog.description}</p>`,
+    frontmatter: blog,
+  };
 };
 
 export const getBlogs = async () => {
-  const files = await fs.readdir(path.join(process.cwd(), "/data"));
-
-  const allBlogs = await Promise.all(
-    files.map(async (file) => {
-      const slug = file.replace(".mdx", "");
-      const frontmatter = await getBlogFrontMatterBySlug(slug);
-      return {
-        slug,
-        ...frontmatter,
-      };
-    }),
-  );
-
-  return allBlogs;
+  return mockBlogs;
 };
 
 export const getBlogFrontMatterBySlug = async (slug: string) => {
-  const singleBlog = await fs.readFile(
-    path.join(process.cwd(), "/data", `${slug}.mdx`),
-    "utf-8",
-  );
-
-  if (!singleBlog) {
-    return null;
-  }
-
-  const { frontmatter } = await compileMDX<FrontMatter>({
-    source: singleBlog,
-    options: { parseFrontmatter: true },
-  });
-
-  return frontmatter;
+  const blog = mockBlogs.find((b) => b.slug === slug);
+  return blog || null;
 };

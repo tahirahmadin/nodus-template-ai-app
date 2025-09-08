@@ -1,5 +1,5 @@
 import { Container } from "@/components/container";
-import { getBlogFrontMatterBySlug, getSingleBlog } from "@/lib/blogs";
+import { getSingleBlog } from "@/lib/blogs";
 import { DivideX } from "@/components/divide";
 import { Helmet } from "react-helmet-async";
 import { useEffect, useState } from "react";

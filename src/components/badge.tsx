@@ -1,4 +1,3 @@
-import React from "react";
 import { ShimmerText } from "./shimmer-text";
 
 export const Badge = ({ text }: { text: string }) => {

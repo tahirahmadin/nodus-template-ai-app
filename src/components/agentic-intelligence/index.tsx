@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { Container } from "../container";
 import { Badge } from "../badge";
 import { SubHeading } from "../subheading";
@@ -18,13 +17,6 @@ import {
   NativeToolsIntegrationSkeleton,
   TextToWorkflowBuilderSkeleton,
 } from "./skeletons";
-
-type Tab = {
-  title: string;
-  description: string;
-  icon: React.FC<React.SVGProps<SVGSVGElement>>;
-  id: string;
-};
 
 export const AgenticIntelligence = () => {
   return (

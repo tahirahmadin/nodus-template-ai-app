@@ -1,5 +1,33 @@
 import config from "@/config";
-import { Metadata } from "next";
+
+// Define Metadata type for Vite/React
+interface Metadata {
+  title?: string;
+  description?: string;
+  keywords?: string[];
+  metadataBase?: URL;
+  alternates?: {
+    canonical?: string;
+  };
+  openGraph?: {
+    title?: string;
+    description?: string;
+    url?: string;
+    siteName?: string;
+    locale?: string;
+    type?: string;
+    images?: Array<{ url: string }>;
+    publishedTime?: string;
+    authors?: string[];
+    tags?: string[];
+  };
+  twitter?: {
+    card?: string;
+    title?: string;
+    description?: string;
+    images?: Array<{ url: string }>;
+  };
+}
 
 interface SEOProps {
   title?: string;

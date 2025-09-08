@@ -1,6 +1,5 @@
 import { Contact } from "@/components/contact";
 import { DivideX } from "@/components/divide";
-import { SignUp } from "@/components/sign-up";
 
 import { Helmet } from "react-helmet-async";
 

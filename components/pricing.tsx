@@ -89,7 +89,7 @@ export const Pricing = () => {
               <Button
                 className="mt-6 w-full"
                 as={Link}
-                href={tier.ctaLink}
+                to={tier.ctaLink}
                 variant={tier.featured ? "brand" : "secondary"}
               >
                 {tier.ctaText}

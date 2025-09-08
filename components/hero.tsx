@@ -1,8 +1,6 @@
 "use client";
-import React from "react";
 import { Container } from "./container";
 import { Heading } from "./heading";
-import { ShimmerText } from "./shimmer-text";
 import { SubHeading } from "./subheading";
 import { GartnerLogo, GartnerLogoText, Star } from "@/icons/general";
 import { motion } from "motion/react";
@@ -25,10 +23,10 @@ export const Hero = () => {
       </SubHeading>
 
       <div className="mt-6 flex items-center gap-4">
-        <Button as={Link} href="/sign-up">
+        <Button as={Link} to="/sign-up">
           Start building
         </Button>
-        <Button variant="secondary" as={Link} href="/pricing">
+        <Button variant="secondary" as={Link} to="/pricing">
           View pricing
         </Button>
       </div>

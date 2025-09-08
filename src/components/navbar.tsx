@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Logo } from "./logo";
 import { Container } from "./container";
 import { Link } from "react-router-dom";

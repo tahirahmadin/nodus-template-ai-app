@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Container } from "./container";
 import { Badge } from "./badge";
 import { SectionHeading } from "./seciton-heading";

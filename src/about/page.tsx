@@ -204,7 +204,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="divide-divide border-divide divide-y border-t lg:border-t-0">
-              {careers.slice(0, 4).map((career, index) => (
+              {careers.slice(0, 4).map((career) => (
                 <Link
                   to={career.href}
                   key={career.id}

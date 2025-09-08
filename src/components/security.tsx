@@ -1,4 +1,3 @@
-import React from "react";
 import { Container } from "./container";
 import { DivideX } from "./divide";
 import { SectionHeading } from "./seciton-heading";

@@ -92,7 +92,7 @@ export const Footer = () => {
           <p className="text-sm font-medium text-gray-600">Product</p>
           {product.map((item) => (
             <Link
-              href={item.href}
+              to={item.href}
               key={item.title}
               className="text-footer-link my-2 text-sm font-medium"
             >
@@ -104,7 +104,7 @@ export const Footer = () => {
           <p className="text-sm font-medium text-gray-600">Company</p>
           {company.map((item) => (
             <Link
-              href={item.href}
+              to={item.href}
               key={item.title}
               className="text-footer-link my-2 text-sm font-medium"
             >
@@ -116,7 +116,7 @@ export const Footer = () => {
           <p className="text-sm font-medium text-gray-600">Legal</p>
           {legal.map((item) => (
             <Link
-              href={item.href}
+              to={item.href}
               key={item.title}
               className="text-footer-link my-2 text-sm font-medium"
             >
@@ -150,7 +150,7 @@ export const Footer = () => {
         </p>
         <div className="mt-4 flex items-center gap-4 md:mt-0">
           <Link
-            href="https://twitter.com"
+            to="https://twitter.com"
             className="text-footer-link transition-colors hover:text-gray-900"
           >
             <svg
@@ -167,7 +167,7 @@ export const Footer = () => {
             </svg>
           </Link>
           <Link
-            href="https://linkedin.com"
+            to="https://linkedin.com"
             className="text-footer-link transition-colors hover:text-gray-900"
           >
             <svg
@@ -186,7 +186,7 @@ export const Footer = () => {
             </svg>
           </Link>
           <Link
-            href="https://instagram.com"
+            to="https://instagram.com"
             className="text-footer-link transition-colors hover:text-gray-900"
           >
             <svg

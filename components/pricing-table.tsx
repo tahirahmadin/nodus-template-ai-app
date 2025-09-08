@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { Container } from "./container";
 import { pricingTable, tiers, TierName } from "@/constants/pricing";
 import { cn } from "@/lib/utils";
@@ -76,7 +76,7 @@ export const PricingTable = () => {
                     </div>
                     <Button
                       as={Link}
-                      href="/sign-up"
+                      to="/sign-up"
                       className="mt-4 w-full"
                       variant="secondary"
                     >

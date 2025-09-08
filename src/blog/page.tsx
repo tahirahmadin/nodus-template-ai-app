@@ -65,7 +65,7 @@ export default function BlogsPage() {
           </SubHeading>
           <div className="border-divide divide-divide mt-10 flex w-full flex-col divide-y border-y">
             <GridLayout blogs={allBlogs.slice(0, 3)} />
-            {allBlogs.slice(3).map((blog, idx) => (
+            {allBlogs.slice(3).map((blog) => (
               <RowLayout key={blog.title} blog={blog} />
             ))}
           </div>
@@ -80,7 +80,7 @@ export default function BlogsPage() {
 const GridLayout = ({ blogs }: { blogs: any[] }) => {
   return (
     <div className="divide-divide grid grid-cols-1 divide-y lg:grid-cols-3 lg:divide-x lg:divide-y-0">
-      {blogs.map((blog, index) => (
+      {blogs.map((blog) => (
         <Link
           key={blog.title}
           to={`/blog/${blog.slug}`}
