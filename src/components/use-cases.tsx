@@ -88,10 +88,22 @@ export const UseCases = () => {
               )}
               <div className="relative z-10 rounded-lg bg-gray-50 p-4 transition duration-200 hover:bg-transparent md:p-5 dark:bg-neutral-800">
                 <div className="flex items-center gap-2">{useCase.icon}</div>
-                <h3 className="mt-4 mb-2 text-lg font-medium">
+                <h3
+                  className="mt-4 mb-2 text-lg font-medium"
+                  style={{
+                    color: "var(--primary)",
+                  }}
+                >
                   {useCase.title}
                 </h3>
-                <p className="text-gray-600">{useCase.description}</p>
+                <p
+                  className="text-sm"
+                  style={{
+                    color: "var(--color-gray-600)",
+                  }}
+                >
+                  {useCase.description}
+                </p>
               </div>
             </div>
           ))}

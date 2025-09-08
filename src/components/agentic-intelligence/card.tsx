@@ -20,10 +20,10 @@ export const CardTitle = ({
 }) => {
   return (
     <h3
-      className={cn(
-        "text-charcoal-700 text-lg font-medium dark:text-neutral-100",
-        className,
-      )}
+      className={cn("text-lg font-medium", className)}
+      style={{
+        color: "var(--primary)",
+      }}
     >
       {children}
     </h3>
@@ -39,10 +39,10 @@ export const CardDescription = ({
 }) => {
   return (
     <p
-      className={cn(
-        "mt-2 text-base text-gray-600 dark:text-gray-300",
-        className,
-      )}
+      className={cn("mt-2 text-base", className)}
+      style={{
+        color: "var(--color-gray-600)",
+      }}
     >
       {children}
     </p>

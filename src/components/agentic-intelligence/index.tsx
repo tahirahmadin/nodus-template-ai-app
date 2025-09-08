@@ -34,7 +34,7 @@ export const AgenticIntelligence = () => {
         <div className="border-divide divide-divide mt-16 grid grid-cols-1 divide-y border-y md:grid-cols-2 md:divide-x">
           <Card className="overflow-hidden mask-b-from-80%">
             <div className="flex items-center gap-2">
-              <BrainIcon />
+              <BrainIcon className="text-brand size-6" />
               <CardTitle>LLM Model Selector</CardTitle>
             </div>
             <CardDescription>
@@ -45,7 +45,7 @@ export const AgenticIntelligence = () => {
           </Card>
           <Card className="overflow-hidden mask-b-from-80%">
             <div className="flex items-center gap-2">
-              <MouseBoxIcon />
+              <MouseBoxIcon className="text-brand size-6" />
               <CardTitle>Text to workflow builder</CardTitle>
             </div>
             <CardDescription>
@@ -59,7 +59,7 @@ export const AgenticIntelligence = () => {
           <Card className="relative w-full max-w-none overflow-hidden">
             <div className="pointer-events-none absolute inset-0 h-full w-full bg-[radial-gradient(var(--color-dots)_1px,transparent_1px)] mask-radial-from-10% [background-size:10px_10px]"></div>
             <div className="flex items-center gap-2">
-              <NativeIcon />
+              <NativeIcon className="text-brand size-6" />
               <CardTitle>Native Tools Integration</CardTitle>
             </div>
             <CardDescription>
@@ -72,7 +72,7 @@ export const AgenticIntelligence = () => {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
           <Card>
             <div className="flex items-center gap-2">
-              <FingerprintIcon />
+              <FingerprintIcon className="text-brand size-6" />
               <CardTitle>One Click Auth</CardTitle>
             </div>
             <CardDescription>
@@ -82,7 +82,7 @@ export const AgenticIntelligence = () => {
           </Card>
           <Card>
             <div className="flex items-center gap-2">
-              <RealtimeSyncIcon />
+              <RealtimeSyncIcon className="text-brand size-6" />
               <CardTitle>Realtime Sync</CardTitle>
             </div>
             <CardDescription>
@@ -92,7 +92,7 @@ export const AgenticIntelligence = () => {
           </Card>
           <Card>
             <div className="flex items-center gap-2">
-              <SDKIcon />
+              <SDKIcon className="text-brand size-6" />
               <CardTitle>Custom Connector SDK</CardTitle>
             </div>
             <CardDescription>
