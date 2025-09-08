@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import { ThemeProvider } from "@/context/theme-provider";
+import { ThemeProvider } from "./context/theme-provider";
 import { Helmet } from "react-helmet-async";
 
 // Import pages
