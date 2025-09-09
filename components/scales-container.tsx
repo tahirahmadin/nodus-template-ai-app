@@ -2,7 +2,7 @@
 import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
 import React, { useRef } from "react";
 import { Scale } from "./scale";
-import { cn } from "../lib/utils";
+import { cn } from "../landingSettings/lib/utils";
 
 const springConfig = {
   stiffness: 300,

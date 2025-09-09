@@ -1,4 +1,4 @@
-import { cn } from "../lib/utils";
+import { cn } from "../landingSettings/lib/utils";
 
 export const Scale = ({ className }: { className?: string }) => {
   return (

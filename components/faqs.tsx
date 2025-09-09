@@ -6,7 +6,7 @@ import { SectionHeading } from "./seciton-heading";
 import { Badge } from "./badge";
 import { Button } from "./button";
 import { DivideX } from "./divide";
-import { faqs } from "../constants/faqs";
+import { faqs } from "../landingSettings/constants/faqs";
 import { AnimatePresence, motion } from "motion/react";
 import useMeasure from "react-use-measure";
 

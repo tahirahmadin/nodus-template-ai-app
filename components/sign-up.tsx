@@ -5,8 +5,8 @@ import { SubHeading } from "./subheading";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { Button } from "./button";
-import { FacebookIcon, GoogleIcon, AppleIcon } from "../icons/general";
-// import { Link } from "react-router-dom"; // Removed for portability
+import { FacebookIcon, GoogleIcon, AppleIcon } from "../landingSettings/icons/general";
+import { Link } from "react-router-dom";
 import { AuthIllustration } from "./auth-illustration";
 
 export const SignUp = () => {
@@ -82,7 +82,7 @@ export const SignUp = () => {
               Already have an account?{" "}
             </span>
             <Link
-              href="/sign-in"
+              to="/sign-in"
               className="text-brand text-sm font-medium hover:underline"
             >
               Sign in

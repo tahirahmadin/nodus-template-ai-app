@@ -1,5 +1,5 @@
-import { CheckIcon } from "@/icons/card-icons";
-import { CloseIcon } from "@/icons/general";
+import { CheckIcon } from "../icons/card-icons";
+import { CloseIcon } from "../icons/general";
 
 export enum TierName {
   TIER_1 = "Growth",

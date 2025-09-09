@@ -2,8 +2,8 @@
 
 import { useMemo, useState } from "react";
 import { Container } from "./container";
-import { pricingTable, tiers, TierName } from "../constants/pricing";
-import { cn } from "../lib/utils";
+import { pricingTable, tiers, TierName } from "../landingSettings/constants/pricing";
+import { cn } from "../landingSettings/lib/utils";
 import { Button } from "./button";
 import { SlidingNumber } from "./sliding-number";
 // import { Link } from "react-router-dom"; // Removed for portability

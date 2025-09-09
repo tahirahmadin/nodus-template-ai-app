@@ -1,4 +1,4 @@
-import { cn } from "../lib/utils";
+import { cn } from "../landingSettings/lib/utils";
 // import { Link } from "react-router-dom"; // Removed for portability
 
 export const Button = <T extends React.ElementType = "button">({

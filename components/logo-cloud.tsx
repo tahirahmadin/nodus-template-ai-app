@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { Container } from "./container";
-import { cn } from "../lib/utils";
+import { cn } from "../landingSettings/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
-import { logos } from "../constants/logos";
+import { logos } from "../landingSettings/constants/logos";
 
 export const LogoCloud = () => {
   // Track which logos are currently displayed (indices)

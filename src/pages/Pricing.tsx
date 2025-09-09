@@ -1,4 +1,3 @@
-import React from "react";
 import { Container } from "../../components/container";
 import { SectionHeading } from "../../components/section-heading";
 import { Pricing as PricingComponent } from "../../components/pricing";

@@ -2,7 +2,7 @@
 import { Container } from "./container";
 import { Heading } from "./heading";
 import { SubHeading } from "./subheading";
-import { GartnerLogo, GartnerLogoText, Star } from "../icons/general";
+import { GartnerLogo, GartnerLogoText, Star } from "../landingSettings/icons/general";
 import { motion } from "motion/react";
 import { Button } from "./button";
 import { Badge } from "./badge";

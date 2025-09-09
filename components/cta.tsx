@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { cn } from "../lib/utils";
+import { cn } from "../landingSettings/lib/utils";
 import {
   AnthropicLogo,
   AppleIcon,
@@ -13,7 +13,7 @@ import {
   OpenAILogo,
   SlackLogo,
   SupabaseLogo,
-} from "../icons/general";
+} from "../landingSettings/icons/general";
 import { Container } from "./container";
 import { SectionHeading } from "./seciton-heading";
 import { Button } from "./button";

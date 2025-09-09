@@ -4,7 +4,7 @@ import { Logo } from "./logo";
 import { Container } from "./container";
 import { Link } from "react-router-dom";
 import { Button } from "./button";
-import { CloseIcon, HamburgerIcon } from "../icons/general";
+import { CloseIcon, HamburgerIcon } from "../landingSettings/icons/general";
 import {
   AnimatePresence,
   motion,

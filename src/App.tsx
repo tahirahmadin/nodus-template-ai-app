@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import { ThemeProvider } from "../context/theme-provider";
+import { ThemeProvider } from "../landingSettings/context/theme-provider";
 import { Navbar } from "../components/navbar";
 import { Footer } from "../components/footer";
 

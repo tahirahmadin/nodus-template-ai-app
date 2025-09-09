@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import { cn } from "../lib/utils";
+import { cn } from "../landingSettings/lib/utils";
 
 type MeshGradientProps = {
   className?: string;

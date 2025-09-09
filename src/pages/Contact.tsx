@@ -1,4 +1,3 @@
-import React from "react";
 import { Container } from "../../components/container";
 import { SectionHeading } from "../../components/section-heading";
 import { Contact as ContactComponent } from "../../components/contact";

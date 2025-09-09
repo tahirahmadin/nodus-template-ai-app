@@ -11,7 +11,7 @@ import {
   NativeIcon,
   RealtimeSyncIcon,
   SDKIcon,
-} from "../../icons/bento-icons";
+} from "../../landingSettings/icons/bento-icons";
 import {
   LLMModelSelectorSkeleton,
   NativeToolsIntegrationSkeleton,

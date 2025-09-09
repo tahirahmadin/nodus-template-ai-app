@@ -7,9 +7,9 @@ import { motion } from "motion/react";
 import { DivideX } from "./divide";
 import { Button } from "./button";
 import { SlidingNumber } from "./sliding-number";
-import { CheckIcon } from "../icons/card-icons";
+import { CheckIcon } from "../landingSettings/icons/card-icons";
 import { Scale } from "./scale";
-import { tiers } from "../constants/pricing";
+import { tiers } from "../landingSettings/constants/pricing";
 // import { Link } from "react-router-dom"; // Removed for portability
 
 export const Pricing = () => {

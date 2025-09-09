@@ -1,4 +1,4 @@
-import { cn } from "../lib/utils";
+import { cn } from "../landingSettings/lib/utils";
 import React from "react";
 
 export const Container = <T extends React.ElementType = "div">({
