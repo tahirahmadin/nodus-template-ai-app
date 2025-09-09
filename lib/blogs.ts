@@ -1,51 +1,79 @@
-// Mock blog data for Vite/React
+import matter from "gray-matter";
+import { remark } from "remark";
+import html from "remark-html";
 
-// Mock blog data
-const mockBlogs = [
-  {
-    slug: "introduction-to-nextjs",
-    title: "Introduction to Next.js",
-    description: "Learn the basics of Next.js framework",
-    date: "2024-01-15",
-    image: "/blog/nextjs.webp",
-    authorName: "John Doe",
-    authorSrc: "/avatars/john.png",
-  },
-  {
-    slug: "mastering-react-hooks",
-    title: "Mastering React Hooks",
-    description: "Deep dive into React hooks and their usage",
-    date: "2024-01-10",
-    image: "/blog/react.webp",
-    authorName: "Jane Smith",
-    authorSrc: "/avatars/jane.png",
-  },
-  {
-    slug: "typescript-best-practices",
-    title: "TypeScript Best Practices",
-    description: "Best practices for writing TypeScript code",
-    date: "2024-01-05",
-    image: "/blog/typescript.webp",
-    authorName: "Mike Johnson",
-    authorSrc: "/avatars/mike.png",
-  },
-];
+type FrontMatter = {
+  title: string;
+  description: string;
+  date: string;
+  image: string;
+  authorName?: string;
+  authorSrc?: string;
+};
+
+// Import all markdown files as modules
+const blogModules = import.meta.glob("/src/data/*.md", {
+  eager: true,
+}) as Record<string, { default: string }>;
 
 export const getSingleBlog = async (slug: string) => {
-  const blog = mockBlogs.find((b) => b.slug === slug);
-  if (!blog) return null;
+  try {
+    const blogPath = `/src/data/${slug}.md`;
+    const blogModule = blogModules[blogPath];
 
-  return {
-    content: `<h1>${blog.title}</h1><p>${blog.description}</p>`,
-    frontmatter: blog,
-  };
+    if (!blogModule) {
+      return null;
+    }
+
+    // Get the raw content from the module
+    const rawContent = blogModule.default;
+
+    // Parse frontmatter
+    const { data: frontmatter, content } = matter(rawContent);
+
+    // Convert markdown to HTML
+    const processedContent = await remark().use(html).process(content);
+
+    const htmlContent = processedContent.toString();
+
+    return { content: htmlContent, frontmatter: frontmatter as FrontMatter };
+  } catch (error) {
+    console.error(`Error reading blog file for slug "${slug}":`, error);
+    return null;
+  }
 };
 
 export const getBlogs = async () => {
-  return mockBlogs;
+  const allBlogs = Object.keys(blogModules).map((path) => {
+    const slug = path.replace("/src/data/", "").replace(".md", "");
+    const module = blogModules[path];
+    const rawContent = module.default;
+    const { data: frontmatter } = matter(rawContent);
+
+    return {
+      slug,
+      ...frontmatter,
+    };
+  });
+
+  return allBlogs;
 };
 
 export const getBlogFrontMatterBySlug = async (slug: string) => {
-  const blog = mockBlogs.find((b) => b.slug === slug);
-  return blog || null;
+  try {
+    const blogPath = `/src/data/${slug}.md`;
+    const blogModule = blogModules[blogPath];
+
+    if (!blogModule) {
+      return null;
+    }
+
+    const rawContent = blogModule.default;
+    const { data: frontmatter } = matter(rawContent);
+
+    return frontmatter as FrontMatter;
+  } catch (error) {
+    console.error(`Error reading blog frontmatter for slug "${slug}":`, error);
+    return null;
+  }
 };

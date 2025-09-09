@@ -1,8 +1,7 @@
 "use client";
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
-// import { useTheme } from "next-themes";
 
 export const Dot = ({
   top,
@@ -42,8 +41,6 @@ export const Dot = ({
       setIsNearMouse(distance <= 100);
     }
   }, [mousePosition]);
-
-  // const { theme } = useTheme();
 
   return (
     <motion.div

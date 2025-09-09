@@ -11,12 +11,12 @@ import {
   ReuseBrainIcon,
   ScreenCogIcon,
   BellIcon,
-} from "@/icons/card-icons";
+} from "../icons/card-icons";
 import { AnimatePresence, motion } from "motion/react";
-import { RealtimeSyncIcon } from "@/icons/bento-icons";
+import { RealtimeSyncIcon } from "../icons/bento-icons";
 import { DivideX } from "./divide";
 import { LogoSVG } from "./logo";
-import { OpenAILogo, SlackLogo } from "@/icons/general";
+import { OpenAILogo, SlackLogo } from "../icons/general";
 import { IconBlock } from "./common/icon-block";
 import { HorizontalLine } from "./common/horizontal-line";
 import { VerticalLine } from "./common/vertical-line";

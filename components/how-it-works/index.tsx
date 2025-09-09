@@ -5,7 +5,7 @@ import { Badge } from "../badge";
 import { SubHeading } from "../subheading";
 import { SectionHeading } from "../seciton-heading";
 import { PixelatedCanvas } from "../pixelated-canvas";
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 import { AnimatePresence, motion } from "motion/react";
 import {
   ConnectYourTooklsSkeleton,

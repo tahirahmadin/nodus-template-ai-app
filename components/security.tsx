@@ -3,7 +3,7 @@ import { DivideX } from "./divide";
 import { SectionHeading } from "./seciton-heading";
 import { SubHeading } from "./subheading";
 import { Button } from "./button";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom"; // Removed for portability
 
 export const Security = () => {
   return (
@@ -25,8 +25,8 @@ export const Security = () => {
           </SubHeading>
           <Button
             className="mt-4 mb-8 inline-block w-full md:w-auto"
-            as={Link}
-            to="/pricing"
+            as="a"
+            href="/pricing"
           >
             Start for free
           </Button>

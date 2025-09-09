@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import { Container } from "./container";
 import { DivideX } from "./divide";
 import { Dot } from "./common/dots";
-import { testimonials } from "@/constants/testimonials";
-import { cn } from "@/lib/utils";
+import { testimonials } from "../constants/testimonials";
+import { cn } from "../lib/utils";
 import { motion } from "motion/react";
 import { AnimatePresence } from "motion/react";
 import { PixelatedCanvas } from "./pixelated-canvas";
@@ -186,7 +186,6 @@ export const Testimonials = () => {
           })}
         </div>
       </Container>
-      <div className="mb-20"></div>
     </>
   );
 };

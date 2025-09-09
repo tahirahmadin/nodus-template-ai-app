@@ -1,7 +1,7 @@
 "use client";
 
-import { MoonIcon, SunIcon } from "@/icons/general";
-import { useTheme } from "../src/context/theme-provider";
+import { MoonIcon, SunIcon } from "../icons/general";
+import { useTheme } from "../context/theme-provider";
 
 export function ModeToggle() {
   const { theme, setTheme } = useTheme();

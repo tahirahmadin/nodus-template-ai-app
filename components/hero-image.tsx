@@ -41,7 +41,7 @@ export const HeroImage = () => {
   };
 
   return (
-    <Container className="border-divide relative flex items-start justify-start border-x bg-gray-100 p-2 perspective-distant md:p-4 lg:p-8 dark:bg-neutral-800">
+    <Container className="border-divide perspective-distant relative flex items-start justify-start border-x bg-gray-100 p-2 md:p-4 lg:p-8 dark:bg-neutral-800">
       <Dot top left />
       <Dot top right />
       <Dot bottom left />
@@ -76,7 +76,7 @@ export const HeroImage = () => {
             draggable={false}
           />
         </motion.div>
-        <div className="absolute inset-0 z-0 m-auto h-[90%] w-[95%] rounded-lg border border-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed"></div>
+        <div className="border-(--pattern-fg) absolute inset-0 z-0 m-auto h-[90%] w-[95%] rounded-lg border bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed"></div>
       </div>
     </Container>
   );

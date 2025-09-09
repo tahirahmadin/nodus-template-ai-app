@@ -4,7 +4,7 @@ import { Logo } from "./logo";
 import { Container } from "./container";
 import { Link } from "react-router-dom";
 import { Button } from "./button";
-import { CloseIcon, HamburgerIcon } from "@/icons/general";
+import { CloseIcon, HamburgerIcon } from "../icons/general";
 import {
   AnimatePresence,
   motion,
@@ -101,8 +101,8 @@ const MobileNav = ({ items }: { items: { title: string; href: string }[] }) => {
               <div className="mt-4 p-4">
                 <Button
                   onClick={() => setIsOpen(false)}
-                  as={Link}
-                  to="/sign-up"
+                  as="a"
+                  href="/sign-up"
                   className="w-full"
                 >
                   Start building
@@ -137,7 +137,7 @@ const DesktopNav = ({
       </div>
       <div className="flex items-center gap-2">
         <ModeToggle />
-        <Button as={Link} to="/sign-up">
+        <Button as="a" href="/sign-up">
           Start building
         </Button>
       </div>
@@ -178,7 +178,7 @@ const FloatingNav = ({
       </div>
       <div className="flex items-center gap-2">
         <ModeToggle />
-        <Button as={Link} to="/sign-up">
+        <Button as="a" href="/sign-up">
           Start building
         </Button>
       </div>

@@ -2,11 +2,11 @@
 
 import { useMemo, useState } from "react";
 import { Container } from "./container";
-import { pricingTable, tiers, TierName } from "@/constants/pricing";
-import { cn } from "@/lib/utils";
+import { pricingTable, tiers, TierName } from "../constants/pricing";
+import { cn } from "../lib/utils";
 import { Button } from "./button";
 import { SlidingNumber } from "./sliding-number";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom"; // Removed for portability
 
 export const PricingTable = () => {
   const [cycle, setCycle] = useState<"monthly" | "yearly">("monthly");
@@ -75,8 +75,8 @@ export const PricingTable = () => {
                       {cycle === "monthly" ? "monthly" : "annually"}
                     </div>
                     <Button
-                      as={Link}
-                      to="/sign-up"
+                      as="a"
+                      href="/sign-up"
                       className="mt-4 w-full"
                       variant="secondary"
                     >

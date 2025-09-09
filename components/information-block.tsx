@@ -7,7 +7,7 @@ import {
   CloudCheckIcon,
   ShieldSplitIcon,
   SparklesIcon,
-} from "@/icons/card-icons";
+} from "../icons/card-icons";
 
 export const InformationBlock = () => {
   const useCases = [

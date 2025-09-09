@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils";
-import { Link } from "react-router-dom";
+import { cn } from "../lib/utils";
+// import { Link } from "react-router-dom"; // Removed for portability
 
 export const Button = <T extends React.ElementType = "button">({
   children,
@@ -13,11 +13,7 @@ export const Button = <T extends React.ElementType = "button">({
   className?: string;
   as?: T;
 } & Omit<React.ComponentProps<T>, "children" | "variant" | "className" | "as"> &
-  (T extends typeof Link
-    ? { to: string }
-    : T extends "a"
-      ? { href: string }
-      : {})) => {
+  (T extends "a" ? { href: string } : {})) => {
   const Component = as || "button";
 
   return (

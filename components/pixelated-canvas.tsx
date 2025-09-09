@@ -1,5 +1,5 @@
 "use client";
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 import React, { useEffect, useRef, useState } from "react";
 
 interface PixelatedCanvasProps {
@@ -141,7 +141,7 @@ export const PixelatedCanvas: React.FC<PixelatedCanvasProps> = ({
   return (
     <canvas
       ref={canvasRef}
-      className={cn("w-full h-full", className)}
+      className={cn("h-full w-full", className)}
       style={{ imageRendering: "pixelated" }}
     />
   );

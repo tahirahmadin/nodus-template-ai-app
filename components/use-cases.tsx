@@ -11,7 +11,7 @@ import {
   DatabaseIcon,
   WalletIcon,
   GraphIcon,
-} from "@/icons/card-icons";
+} from "../icons/card-icons";
 import { Scale } from "./scale";
 import { motion } from "motion/react";
 

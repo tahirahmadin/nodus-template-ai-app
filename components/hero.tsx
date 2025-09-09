@@ -2,11 +2,11 @@
 import { Container } from "./container";
 import { Heading } from "./heading";
 import { SubHeading } from "./subheading";
-import { GartnerLogo, GartnerLogoText, Star } from "@/icons/general";
+import { GartnerLogo, GartnerLogoText, Star } from "../icons/general";
 import { motion } from "motion/react";
 import { Button } from "./button";
 import { Badge } from "./badge";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom"; // Removed for portability
 
 export const Hero = () => {
   return (
@@ -23,10 +23,10 @@ export const Hero = () => {
       </SubHeading>
 
       <div className="mt-6 flex items-center gap-4">
-        <Button as={Link} to="/sign-up">
+        <Button as="a" href="/sign-up">
           Start building
         </Button>
-        <Button variant="secondary" as={Link} to="/pricing">
+        <Button variant="secondary" as="a" href="/pricing">
           View pricing
         </Button>
       </div>

@@ -7,10 +7,10 @@ import { motion } from "motion/react";
 import { DivideX } from "./divide";
 import { Button } from "./button";
 import { SlidingNumber } from "./sliding-number";
-import { CheckIcon } from "@/icons/card-icons";
+import { CheckIcon } from "../icons/card-icons";
 import { Scale } from "./scale";
-import { tiers } from "@/constants/pricing";
-import { Link } from "react-router-dom";
+import { tiers } from "../constants/pricing";
+// import { Link } from "react-router-dom"; // Removed for portability
 
 export const Pricing = () => {
   const tabs = [
@@ -88,8 +88,8 @@ export const Pricing = () => {
               </div>
               <Button
                 className="mt-6 w-full"
-                as={Link}
-                to={tier.ctaLink}
+                as="a"
+                href={tier.ctaLink}
                 variant={tier.featured ? "brand" : "secondary"}
               >
                 {tier.ctaText}

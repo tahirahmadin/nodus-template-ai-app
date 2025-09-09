@@ -3,7 +3,7 @@ import { Button } from "./button";
 import { Container } from "./container";
 import { Logo } from "./logo";
 import { SubHeading } from "./subheading";
-import { SendIcon } from "@/icons/bento-icons";
+import { SendIcon } from "../icons/bento-icons";
 
 export const Footer = () => {
   const product = [

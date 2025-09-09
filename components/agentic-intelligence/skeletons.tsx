@@ -6,7 +6,7 @@ import {
   PhoneIcon,
   SendIcon,
   WindowIcon,
-} from "@/icons/bento-icons";
+} from "../../icons/bento-icons";
 import { DivideX } from "../divide";
 import {
   AnthropicLogo,
@@ -16,11 +16,11 @@ import {
   OpenAILogo,
   SlackLogo,
   SupabaseLogo,
-} from "@/icons/general";
+} from "../../icons/general";
 import { motion } from "motion/react";
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 import { useState, useEffect } from "react";
-import { useTypewriter } from "@/hooks/use-typewriter";
+import { useTypewriter } from "../../hooks/use-typewriter";
 import { LogoSVG } from "../logo";
 import { IconBlock } from "../common/icon-block";
 

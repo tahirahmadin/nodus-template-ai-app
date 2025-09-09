@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 import {
   AnthropicLogo,
   AppleIcon,
@@ -13,11 +13,11 @@ import {
   OpenAILogo,
   SlackLogo,
   SupabaseLogo,
-} from "@/icons/general";
+} from "../icons/general";
 import { Container } from "./container";
 import { SectionHeading } from "./seciton-heading";
 import { Button } from "./button";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom"; // Removed for portability
 
 type SvgComponent = React.ComponentType<React.SVGProps<SVGSVGElement>>;
 
@@ -36,7 +36,7 @@ export const CTA = () => {
       <SectionHeading className="relative z-10 text-center lg:text-6xl">
         Connect your Current Stack <br /> and Start Automating
       </SectionHeading>
-      <Button as={Link} to="/sign-up" className="relative z-20 mt-4">
+      <Button as="a" href="/sign-up" className="relative z-20 mt-4">
         Start Building for Free
       </Button>
     </Container>

@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { Container } from "./container";
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 import { AnimatePresence, motion } from "motion/react";
-import { logos } from "@/constants/logos";
+import { logos } from "../constants/logos";
 
 export const LogoCloud = () => {
   // Track which logos are currently displayed (indices)
@@ -42,7 +42,7 @@ export const LogoCloud = () => {
 
   return (
     <Container className="border-divide border-x">
-      <h2 className="py-8 text-center font-mono text-sm tracking-tight text-neutral-500 uppercase dark:text-gray-300">
+      <h2 className="py-8 text-center font-mono text-sm uppercase tracking-tight text-neutral-500 dark:text-gray-300">
         Trusted by Fast Growing Startups
       </h2>
       <div className="border-divide grid grid-cols-2 border-t md:grid-cols-4">
