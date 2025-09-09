@@ -1,21 +1,21 @@
 import { Helmet } from "react-helmet-async";
 
 // Import all landing page components
-import { Hero } from "../components/hero";
-import { HeroImage } from "../components/hero-image";
-import { LogoCloud } from "../components/logo-cloud";
-import { HowItWorks } from "../components/how-it-works";
-import { AgenticIntelligence } from "../components/agentic-intelligence";
-import { UseCases } from "../components/use-cases";
-import { Benefits } from "../components/benefits";
-import { Testimonials } from "../components/testimonials";
-import { Pricing } from "../components/pricing";
-import { Security } from "../components/security";
-import { FAQs } from "../components/faqs";
-import { CTA } from "../components/cta";
-import { DivideX } from "../components/divide";
+import { Hero } from "../../../notusComponents/hero";
+import { HeroImage } from "../../../notusComponents/hero-image";
+import { LogoCloud } from "../../../notusComponents/logo-cloud";
+import { HowItWorks } from "../../../notusComponents/how-it-works";
+import { AgenticIntelligence } from "../../../notusComponents/agentic-intelligence";
+import { UseCases } from "../../../notusComponents/use-cases";
+import { Benefits } from "../../../notusComponents/benefits";
+import { Testimonials } from "../../../notusComponents/testimonials";
+import { Pricing } from "../../../notusComponents/pricing";
+import { Security } from "../../../notusComponents/security";
+import { FAQs } from "../../../notusComponents/faqs";
+import { CTA } from "../../../notusComponents/cta";
+import { DivideX } from "../../../notusComponents/divide";
 
-export const LandingPage = () => {
+export const Home = () => {
   return (
     <>
       <Helmet>
@@ -56,4 +56,4 @@ export const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default Home;

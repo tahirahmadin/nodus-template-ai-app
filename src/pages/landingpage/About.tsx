@@ -1,18 +1,18 @@
-import { Badge } from "../../components/badge";
-import { Container } from "../../components/container";
-import { CTA } from "../../components/cta";
-import { DivideX } from "../../components/divide";
-import { Heading } from "../../components/heading";
-import { InformationBlock } from "../../components/information-block";
-import { ProgressiveBlur } from "../../components/progressive-blur";
-import { SectionHeading } from "../../components/seciton-heading";
-import { SubHeading } from "../../components/subheading";
-import { Testimonials } from "../../components/testimonials";
-import { careers, Department } from "../../landingSettings/constants/careers";
-import { founders } from "../../landingSettings/constants/founders";
-import { LinkedInIcon } from "../../landingSettings/icons/general";
+import { Badge } from "../../../notusComponents/badge";
+import { Container } from "../../../notusComponents/container";
+import { CTA } from "../../../notusComponents/cta";
+import { DivideX } from "../../../notusComponents/divide";
+import { Heading } from "../../../notusComponents/heading";
+import { InformationBlock } from "../../../notusComponents/information-block";
+import { ProgressiveBlur } from "../../../notusComponents/progressive-blur";
+import { SectionHeading } from "../../../notusComponents/section-heading";
+import { SubHeading } from "../../../notusComponents/subheading";
+import { Testimonials } from "../../../notusComponents/testimonials";
+import { careers, Department } from "../../../landingSettings/constants/careers";
+import { founders } from "../../../landingSettings/constants/founders";
+import { LinkedInIcon } from "../../../landingSettings/icons/general";
 
-import { getSEOTags } from "../../landingSettings/lib/seo";
+import { getSEOTags } from "../../../landingSettings/lib/seo";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 

@@ -1,6 +1,6 @@
-import { Container } from "../../components/container";
-import { SectionHeading } from "../../components/section-heading";
-import { Contact as ContactComponent } from "../../components/contact";
+import { Container } from "../../../notusComponents/container";
+import { SectionHeading } from "../../../notusComponents/section-heading";
+import { Contact as ContactComponent } from "../../../notusComponents/contact";
 
 const Contact = () => {
   return (

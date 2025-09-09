@@ -1,12 +1,12 @@
-import { Badge } from "../../components/badge";
-import { Button } from "../../components/button";
-import { Container } from "../../components/container";
-import { CTA } from "../../components/cta";
-import { DivideX } from "../../components/divide";
-import { ScalesContainer } from "../../components/scales-container";
-import { SectionHeading } from "../../components/seciton-heading";
-import { SubHeading } from "../../components/subheading";
-import { careers, Department } from "../../landingSettings/constants/careers";
+import { Badge } from "../../../notusComponents/badge";
+import { Button } from "../../../notusComponents/button";
+import { Container } from "../../../notusComponents/container";
+import { CTA } from "../../../notusComponents/cta";
+import { DivideX } from "../../../notusComponents/divide";
+import { ScalesContainer } from "../../../notusComponents/scales-container";
+import { SectionHeading } from "../../../notusComponents/section-heading";
+import { SubHeading } from "../../../notusComponents/subheading";
+import { careers, Department } from "../../../landingSettings/constants/careers";
 import {
   BoltIcon,
   CloudCheckIcon,
@@ -14,10 +14,10 @@ import {
   ShieldSplitIcon,
   SparklesIcon,
   TelescopeIcon,
-} from "../../landingSettings/icons/card-icons";
+} from "../../../landingSettings/icons/card-icons";
 
-import { getSEOTags } from "../../landingSettings/lib/seo";
-import { cn } from "../../landingSettings/lib/utils";
+import { getSEOTags } from "../../../landingSettings/lib/seo";
+import { cn } from "../../../landingSettings/lib/utils";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 

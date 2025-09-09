@@ -1,20 +1,20 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { ThemeProvider } from "../landingSettings/context/theme-provider";
-import { Navbar } from "../components/navbar";
-import { Footer } from "../components/footer";
+import { Navbar } from "../notusComponents/navbar";
+import { Footer } from "../notusComponents/footer";
 
 // Import all page components
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
-import Careers from "./pages/Careers";
-import Contact from "./pages/Contact";
-import Playground from "./pages/Playground";
-import Pricing from "./pages/Pricing";
-import SignIn from "./pages/SignIn";
-import SignUp from "./pages/SignUp";
+import Home from "./pages/landingpage/Home";
+import About from "./pages/landingpage/About";
+import Blog from "./pages/landingpage/Blog";
+import BlogPost from "./pages/landingpage/BlogPost";
+import Careers from "./pages/landingpage/Careers";
+import Contact from "./pages/landingpage/Contact";
+import Playground from "./pages/landingpage/Playground";
+import Pricing from "./pages/landingpage/Pricing";
+import SignIn from "./pages/landingpage/SignIn";
+import SignUp from "./pages/landingpage/SignUp";
 
 function App() {
   return (

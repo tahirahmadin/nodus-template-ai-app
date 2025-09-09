@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
-import { Container } from "../../components/container";
-import { SectionHeading } from "../../components/section-heading";
+import { Container } from "../../../notusComponents/container";
+import { SectionHeading } from "../../../notusComponents/section-heading";
 
 const BlogPost = () => {
   const { slug } = useParams();

@@ -1,6 +1,6 @@
-import { Container } from "../../components/container";
-import { SectionHeading } from "../../components/section-heading";
-import { Pricing as PricingComponent } from "../../components/pricing";
+import { Container } from "../../../notusComponents/container";
+import { SectionHeading } from "../../../notusComponents/section-heading";
+import { Pricing as PricingComponent } from "../../../notusComponents/pricing";
 
 const Pricing = () => {
   return (

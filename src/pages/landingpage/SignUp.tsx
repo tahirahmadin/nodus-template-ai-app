@@ -1,6 +1,6 @@
-import { Container } from "../../components/container";
-import { SectionHeading } from "../../components/section-heading";
-import { SignUp as SignUpComponent } from "../../components/sign-up";
+import { Container } from "../../../notusComponents/container";
+import { SectionHeading } from "../../../notusComponents/section-heading";
+import { SignUp as SignUpComponent } from "../../../notusComponents/sign-up";
 
 const SignUp = () => {
   return (
